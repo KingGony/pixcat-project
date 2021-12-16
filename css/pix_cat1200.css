@@ -1,0 +1,170 @@
+/* 1200px */
+
+/* 상단 네비게이션 */
+header {
+    height: 100px;
+}
+
+#nav-pc {
+    width: 450px;
+    margin: auto;
+    /*border: 1px solid;*/
+}
+
+a.icon {
+    display: none;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+ul li {
+    /*width: 80px;*/
+    height: 80px;
+    line-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+}
+
+/* content */
+
+.container {
+    font-family: "고딕", Arial, sans-serif;
+    width: 750px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: auto;
+    background-color: rgba( 0, 0, 0, 0.8 );
+}
+
+.st1 {
+    background-color: black;
+}
+
+.st2 {
+    background-color: none;
+}
+
+/* home */
+.home{}
+
+.home .frame img{
+    width: 80%;
+}
+
+/* about */
+.about .content{
+    width: 430px;
+    float: left;
+}
+
+.about_box{
+    width: 400px;
+    height: 250px;
+    position: relative;
+    top: -80px;
+    left: 260px;
+}
+
+.about_box img{
+    width: 400px;
+}
+
+/* series */
+.series{}
+
+.ser_wrap{
+    position: relative;
+}
+
+.ser_box1{
+    width: 750px;
+    height: 48vw;
+    margin: auto;
+    background-color: rgba( 0, 0, 0, 0.8 );
+}
+
+.ser_box2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.series_img{
+    height: 48vw;
+    width: 70vw;
+    margin: auto;
+}
+
+.series_img .series_back{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    background-image: url(../img/map_japen.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+/* roadmap */
+.roadmap{}
+
+.roadmap .roadmap_txt{
+    float: left;
+    padding: 70px 0px;
+}
+
+.roadmap .roadimg{
+    height: 160px;
+    float: right;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+}
+
+.roadmap .imgdown{
+    top: 80px;
+}
+
+.roadmap .imgright{
+    left: 46px;
+}
+
+.roadmap .imgsmall{
+    height: 240px;
+}
+
+/* team */
+.team{}
+
+.team_box{
+    width: 295px;
+    height: 300px;
+    float: left;
+}
+
+.links{
+    width: 600px;
+    margin: auto;
+}
+
+.links .linkurl{
+    width: 300px;
+    text-align: center;
+    float: left;
+    padding: 20px 0px;
+}
+
+.linktitle{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.linktitle img{
+    width: 140px;
+}

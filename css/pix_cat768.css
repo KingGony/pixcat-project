@@ -1,0 +1,149 @@
+/* 768px */
+
+.bgcolor{
+    background-color: rgba( 0, 0, 0, 0.8 );
+}
+
+/* 상단 네비게이션 */
+header {
+    height: 80px;
+}
+
+#nav-pc {
+    width: 360px;
+    float: right;
+}
+
+a.icon {
+    display: none;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+ul li {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+
+/* content */
+
+.container {
+    font-family: "고딕", Arial, sans-serif;
+    /*color: #989c9b;*/
+    width: 560px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: auto;
+}
+
+.st1 {
+    background-color: black;
+}
+
+.st2 {
+    background-color: none;
+}
+
+/* home */
+.home{}
+
+.home .frame img{
+    width: 80%;
+}
+
+/* about */
+.about{}
+
+.about_box{
+    position: relative;
+    width: 200px;
+    top: -30px;
+    left: 240px;
+}
+
+.about_box img{
+    width: 200px;
+}
+
+/* series */
+.series{}
+
+.ser_wrap{
+    position: relative;
+}
+
+.ser_box1{
+    width: 750px;
+    height: 48vw;
+    margin: auto;
+}
+
+.ser_box2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.series_img{
+    height: 48vw;
+    width: 70vw;
+    margin: auto;
+}
+
+.series_img .series_back{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    background-image: url(../img/map_japen.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+
+/* roadmap */
+.roadmap{}
+
+.roadmap .roadimg{
+    height: 160px;
+    position: relative;
+    top: -30px;
+    opacity: 0;
+}
+
+/* team */
+.team{}
+
+.team_box{
+    float: left;
+    width: 200px;
+    height: 320px;
+}
+
+.links{
+    width: 400px;
+    margin: auto;
+}
+
+.links .linkurl{
+    width: 200px;
+    text-align: center;
+    float: left;
+    padding: 20px 0px;
+}
+
+.linktitle{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.linktitle img{
+    width: 140px;
+}

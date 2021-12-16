@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>pix cat</title>
+    <meta name="title" content="PIX CAT (픽스캣)" />
+    <meta name="twitter:title" content="PIX CAT (픽스캣)" />
+    <meta name="description" content="Welcome To The World Of pixcat NFT!">
+    <meta name="twitter:description" content="Introduce to PerFriends' NFT series" />
+    <meta name="keywords" content="pixcat, pixcatNFT, pixtoryNFT, pixelFactoryNFT, klaytnNFT, klaymint, NFTmarket, 픽스캣, 픽스캣NFT, 픽셀팩토리NFT, 클레이튼NFT, 클레이민트, NFT마켓">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta property="og:url" content="https://www.pixcat.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="PIX CAT (픽스캣)" />
+    <meta property="og:description" content="Introduce to PIX CAT' NFT series">
+    <meta property="og:image" content="/img/ogImage.jpg" />
+    <meta property="twitter:image" content="/img/twitterImage.jpg" />
+    <link rel="stylesheet" href="css/pix_cat.css" media="all">
+    <link rel="stylesheet" href="css/pix_cat1200.css" media="screen and (min-width: 1200px)">
+    <link rel="stylesheet" href="css/pix_cat768.css" media="screen and (min-width: 576px) and (max-width:1199px)">
+    <link rel="stylesheet" href="css/pix_cat576.css" media="screen and (min-width: 0px) and (max-width: 575px)">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            var i = 0;
+            $(".icon").on("click", function() {
+                $("#nav-mobile").find("a").not(".icon").slideDown(500);
+                $("header").addClass("change");
+                if (i % 2 == 0) {
+                    $("#nav-mobile").find("a").not(".icon").slideDown(500);
+                } else {
+                    $("#nav-mobile").find("a").not(".icon").slideUp(500);
+                    $("header").removeClass("change");
+                }
+                i++;
+            });
+            $(".rw").on("click", function() {
+                $("#nav-mobile").find("a").not(".icon").slideUp(500);
+                $("header").removeClass("change");
+                i++;
+            });
+
+
+            $("a").on("click", function(e) {
+                e.preventDefault(e); //기본동작 (a태그의 기본동작인 링크기능)을 취소한다.
+
+                var hash = $(this).attr("href");
+                var pos = $(hash).offset().top;
+                $("html").animate({
+                    scrollTop: pos
+                }, 800, "swing"); //swing,linear 로 가속도 조절
+            });
+
+            $(window).on("scroll", function() {
+                var pos = $(window).scrollTop();
+                //윈도우의 스크롤 길이가 30px이상이면 헤더에 st클래스를 붙이고 아니면 제거한다.
+                $("header")[1 >= pos ? "removeClass" : "addClass"]("st1");
+                $("header")[1 >= pos ? "addClass" : "removeClass"]("st2");
+            });
+
+            $(window).scroll(function() {
+                $('.roadimg').each(function(i) {
+                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+                    var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+                    if (bottom_of_window > bottom_of_element) {
+                        $(this).animate({
+                            'opacity': '1'
+                        }, 1000);
+                    }
+                })
+            })
+        });
+
+        function simpleParallax() {
+            // 스크롤된 거리
+            var scrolled = $(window).scrollTop() + 1;
+
+            // 백그라운드 스크롤 속도 변경
+            $('.scroll').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+        }
+
+        // Everytime we scroll, it will fire teh function
+        $(window).scroll(function(e) {
+            simpleParallax();
+        })
+
+        var image = new Array()
+        image[0]="img/frame/frame1.png";
+        image[1]="img/frame/frame2.png";
+        image[2]="img/frame/frame3.png";
+        image[3]="img/frame/frame4.png";
+        image[4]="img/frame/frame5.png";
+        image[5]="img/frame/frame6.png";
+        image[6]="img/frame/frame7.png";
+        image[7]="img/frame/frame8.png";
+        image[8]="img/frame/frame9.png";
+        image[9]="img/frame/frame10.png";
+
+        var index;
+        var tmp;
+        function roll(){
+            if(index!=null){
+                tmp = index;
+            }
+            index = Math.floor(Math.random()*(image.length))
+            if(tmp!=null){
+                while(tmp==index){
+                    index = Math.floor(Math.random()*(image.length))
+                }
+            }
+            $('.frame img').attr("src",image[index]);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="scroll">
+        <div class="bgcolor">
+            <header>
+                <div id="logo">
+                    <a href="#sect01"><img alt="logo" src="img/logo/logo1_1.png"></a>
+                </div>
+                <nav id="nav-pc">
+                    <ul>
+                        <li><a href="#sect01">Home</a></li>
+                        <li><a href="#sect02">About</a></li>
+                        <li><a href="#sect03">Series</a></li>
+                        <li><a href="#sect04">Roadmap</a></li>
+                        <li><a href="#sect05">Team</a></li>
+                    </ul>
+                </nav>
+                <nav id="nav-mobile">
+                    <a href="#" class="icon">
+                        <div class="btn-st">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </a>
+                    <a href="#sect01" class="rw">Home</a>
+                    <a href="#sect02" class="rw">About</a>
+                    <a href="#sect03" class="rw">Series</a>
+                    <a href="#sect04" class="rw">Roadmap</a>
+                    <a href="#sect05" class="rw">Team</a>
+                </nav>
+            </header>
+            <section id="sect01">
+                <div class="container">
+                    <div class="home">
+                        <div class="frame">
+                            <img alt="frame" src="img/frame/frame1.png">
+                        </div>
+                        <div class="reroll">
+                            <a style="cursor: pointer" id="rebtn" onclick="roll()">
+                                <img alt="button" src="img/button/button1.png" id="ajax_button">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sect02">
+                <div class="container">
+                    <div class="about">
+                        <div class="title">
+                            <img src="img/logo/text1.png">
+                        </div>
+                        <div class="content">
+                            <p>
+                                PIX CAT은 블록체인에서 생성된 사랑스러운 고양이입니다.<br>
+                                제너레이티브 아트 기술로 만들어진 <br>
+                                961마리의 매력 넘치는 고양이와 아트 디자이너의<br>
+                                <b>노오력</b>이 담긴 39마리의 특별한 고양이가<br>
+                                집사를 기다리고 있습니다.<br>
+                                PIX CAT을 소유하면 미래 프로젝트의 투표권을 얻고<br>
+                                다양한 이벤트에 참여할 수 있는 권한을 가집니다.<br>
+                                어서 PIX CAT의 집사가 되어주세요!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about_box"><img alt="pixcat" src="img/pixcatimg.png"></div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+            <section id="sect03">
+                <div class="container">
+                    <div class="series">
+                        <div class="title">
+                            <img src="img/logo/text2.png">
+                        </div>
+                        <div class="series_txt">
+                            <p>
+                                PIXEL FACTORY에는 다양한 종류의 친구들이 살고 있습니다.<br>새롭게 등장할 친구들은 누구일까요?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ser_wrap">
+                    <div class="ser_box1"></div>
+                    <div class="ser_box2">
+                        <div class="series_img">
+                            <div class="series_back"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="sect04">
+                <div class="container">
+                    <div class="roadmap">
+                        <div class="title">
+                            <img src="img/logo/text3.png">
+                        </div>
+                        <div class="roadmap_txt">
+                            <p class="roadtitle">STEP 1</p>
+                            <p>1000마리 PIXCAT 분양</p>
+                            <p>가치 유지를 위한 Buyback 및 PIXCAT 집사들에게 airdrop</p>
+                        </div>
+                        <img alt="step1img" src="img/airdrop1.png" class="imgsmall roadimg">
+                        <div class="clear"></div>
+                        <div class="roadmap_txt">
+                            <p class="roadtitle">STEP 2</p>
+                            <p>Staking을 통한 교배시스템 or 고양이 놀이방</p>
+                            <p>NFT 고양이 미용실 운영</p>
+                        </div>
+                        <img alt="step2img" src="img/playroom.png" class="roadimg imgdown">
+                        <div class="clear"></div>
+                        <div class="roadmap_txt">
+                            <p class="roadtitle">STEP 3</p>
+                            <p>PIXCAT을 활용한 이모티콘, 굿즈 제작</p>
+                            <p>타 프로젝트와의 협업 추진</p>
+                        </div>
+                        <img alt="step3img" src="img/emoticon.png" class="imgsmall roadimg">
+                        <div class="clear"></div>
+                        <div class="roadmap_txt">
+                            <p class="roadtitle">STEP 4</p>
+                            <p>PIXEL FACTORY 뉴페이스 소개 및 런칭</p>
+                            <p>PIXCAT 집사들에게 보상 지급</p>
+                        </div>
+                        <img alt="step4img" src="img/newface.png" class="roadimg imgdown imgright">
+                        <div class="clear"></div>
+                        <div class="roadmap_txt">
+                            <p class="roadtitle">STEP 5</p>
+                            <p>동물보호단체 기부</p>
+                            <p>해외로 사업 확장</p>
+                        </div>
+                        <img alt="step5img" src="img/donation.png" class="roadimg">
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="sect05">
+                <div class="container">
+                    <div class="team">
+                        <div class="title">
+                            <img src="img/logo/text4.png">
+                        </div>
+                        <div>
+                            <div class="team_box">
+                                <img alt="team3" src="img/team/team3.png">
+                                <p class="name">팀리더 uni</p>
+                                <p>귀여운게 최고다!</p>
+                            </div>
+                            <div class="team_box">
+                                <img alt="team1" src="img/team/team1.png">
+                                <p class="name">디자이너 simworm</p>
+                                <p>앞으로 pixel factory의 다양한 컨텐츠를 기대해주세요!</p>
+                            </div>
+                            <div class="team_box">
+                                <img alt="team2" src="img/team/team2.png">
+                                <p class="name">웹 개발자 gony</p>
+                                <p>저는 고양이 알레르기가 있어요.</p>
+                            </div>
+
+                            <div class="team_box">
+                                <img alt="team4" src="img/team/team4.png">
+                                <p class="name">개발자 evergreen</p>
+                                <p>화성에 가고 싶습니다.</p>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="links">
+                            <div class="linktitle">
+                                <img alt="links" src="img/logo/link.png">
+                            </div>
+                            <div class="linkurl">
+                                <a href="#">
+                                    <img alt="twitter" src="img/icon/t1.png">
+                                </a>
+                            </div>
+                            <div class="linkurl">
+                                <a href="#">
+                                    <img alt="twitter" src="img/icon/d1.png">
+                                </a>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                &copy; Copyright 2021. PixelFactory All Rights Reserved.
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
