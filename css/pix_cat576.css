@@ -110,7 +110,7 @@ header {
 }
 
 .about .content p{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .about_box{
@@ -134,7 +134,7 @@ header {
 }
 
 .series_txt p{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .ser_wrap{
@@ -180,16 +180,16 @@ header {
 }
 
 .roadmap_txt p{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .roadmap_txt .roadtitle{
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .roadmap .roadimg{
-    height: 100px;
+    height: 140px;
     position: relative;
     top: -30px;
     opacity: 0;
@@ -205,7 +205,7 @@ header {
 }
 
 .team_box p{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .team_box img{
