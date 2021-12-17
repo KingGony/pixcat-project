@@ -89,11 +89,19 @@ header {
     background-color: none;
 }
 
+.title img{
+    height: 30%;
+}
+
 /* home */
 .home{}
 
 .home .frame img{
-    width: 100%;
+    width: 80%;
+}
+
+#ajax_button{
+    width: 40%;
 }
 
 /* about */
@@ -101,11 +109,15 @@ header {
     width: 100%;
 }
 
+.about .content p{
+    font-size: 12px;
+}
+
 .about_box{
     position: relative;
     width: 200px;
-    top: 0px;
-    left: 160px;
+    top: 10px;
+    left: 0px;
 }
 
 .about_box img{
@@ -119,6 +131,10 @@ header {
 
 .series_txt{
     width: 70%;
+}
+
+.series_txt p{
+    font-size: 12px;
 }
 
 .ser_wrap{
@@ -163,8 +179,17 @@ header {
     width: 100%;
 }
 
+.roadmap_txt p{
+    font-size: 12px;
+}
+
+.roadmap_txt .roadtitle{
+    font-weight: bold;
+    font-size: 14px;
+}
+
 .roadmap .roadimg{
-    height: 160px;
+    height: 100px;
     position: relative;
     top: -30px;
     opacity: 0;
@@ -176,25 +201,32 @@ header {
 }
 
 .team_box{
-    float: left;
-    width: 45%;
-    height: 340px;
+    height: 100%;
+}
+
+.team_box p{
+    font-size: 12px;
 }
 
 .team_box img{
-    width: 100%;
+    width: 30%;
+    float: right;
 }
 
 .links{
-    width: 360px;
+    width: 100%;
     margin: auto;
 }
 
 .links .linkurl{
-    width: 180px;
+    width: 50%;
     text-align: center;
     float: left;
     padding: 20px 0px;
+}
+
+.links .linkurl img{
+    width: 50%;
 }
 
 .linktitle{
@@ -203,5 +235,5 @@ header {
 }
 
 .linktitle img{
-    width: 140px;
+    width: 50%;
 }
