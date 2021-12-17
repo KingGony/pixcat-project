@@ -195,7 +195,7 @@
                                 <img alt="links" src="img/logo/link.png">
                             </div>
                             <div class="linkurl">
-                                <a href='https://twitter.com/PixelFactoryNFT' target='_blank'>
+                                <a href="https://twitter.com/PixelFactoryNFT" target="_blank">
                                     <img alt="twitter" src="img/icon/t1.png">
                                 </a>
                             </div>
@@ -260,6 +260,8 @@
                     scrollTop: pos
                 }, 800, "swing"); //swing,linear 로 가속도 조절
             });
+
+            $('.linkurl').find("a").unbind();
 /*
             $(window).on("scroll", function() {
                 var pos = $(window).scrollTop();
