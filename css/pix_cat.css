@@ -16,8 +16,8 @@
     box-sizing: border-box;
 }
 
-body{
-    width: device-width;
+html, body{
+    max-width: 100%;
     overflow-x: hidden;
 }
 
