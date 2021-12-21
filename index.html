@@ -262,41 +262,15 @@
             });
 
             $('.linkurl').find("a").unbind();
-/*
-            $(window).on("scroll", function() {
-                var pos = $(window).scrollTop();
-                //윈도우의 스크롤 길이가 30px이상이면 헤더에 st클래스를 붙이고 아니면 제거한다.
-                $("header")[1 >= pos ? "removeClass" : "addClass"]("st1");
-                $("header")[1 >= pos ? "addClass" : "removeClass"]("st2");
-            });
-
-            $(window).scroll(function() {
-                $('.roadimg').each(function(i) {
-                    var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-                    var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-                    if (bottom_of_window > bottom_of_element) {
-                        $(this).animate({
-                            'opacity': '1'
-                        }, 1000);
-                    }
-                })
-            })
-            */
         });
 
         function simpleParallax() {
             // 스크롤된 거리
-            var scrolled = $(window).scrollTop() + 1;
+            var scrolled = $(window).scrollTop() + 2;
 
             // 백그라운드 스크롤 속도 변경
-            $('.scroll').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+            $('.scroll').css('background-position', '0%' + (scrolled * 0.3) + 'px');
         }
-
-        // Everytime we scroll, it will fire teh function
-        /*$(window).scroll(function(e) {
-            simpleParallax();
-        })*/
 
         window.addEventListener(
             "scroll",
