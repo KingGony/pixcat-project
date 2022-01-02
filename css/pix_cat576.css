@@ -96,11 +96,7 @@ header {
 /* home */
 .home{}
 
-.home .frame img{
-    width: 80%;
-}
-
-#ajax_button{
+#reroll_button{
     width: 40%;
 }
 

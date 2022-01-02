@@ -50,10 +50,6 @@ ul li {
 /* home */
 .home{}
 
-.home .frame img{
-    width: 80%;
-}
-
 /* about */
 .about .content{
     width: 430px;

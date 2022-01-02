@@ -122,6 +122,11 @@ section:first-of-type {
     text-align: center;
 }
 
+.home .frame img{
+    width: 80%;
+    padding: 8%;
+}
+
 .home .reroll{
     text-align: center;
     padding: 10px 0px;
