@@ -1,4 +1,11 @@
 /* 1200px */
+.scroll{
+    width: 100%;
+    background: url(../img/bodyback1200.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #5a3815;
+}
 
 /* 상단 네비게이션 */
 header {
