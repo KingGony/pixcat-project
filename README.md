@@ -23,7 +23,7 @@ Image Copyright 2022. PixelFactory All Rights Reserved.
 
 
 
-<h2>OFFICIAL LIKS:</h2>
+<h2>OFFICIAL LINKS:</h2>
 
 
 
