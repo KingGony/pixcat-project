@@ -11,7 +11,7 @@ This is First NFT Series of Pixel Factory!
 
 
 
-It has 3961 random-generated NFTs and 39 Special NFTS
+It has 4461 random-generated NFTs and 48 Special NFTS
 
 
 
